@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-import os
 from random import randint
-from linereader import dopen
 
 def hangman(word):
     wrong = 0 # Кол-во ошибок
@@ -51,6 +49,5 @@ f = open('word_rus.txt')
 for i in range(randint(1, 33723)):
     word = f.readline()
 
-print(word)
 hangman(word.upper().rstrip())
 
